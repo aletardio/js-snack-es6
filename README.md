@@ -39,3 +39,13 @@ Stampare in pagina oltre che in console!
 3. Il nome è l'unica proprietà da complare, le altre proprietà saranno settate a 0; 
 4. Generare numeri random per le proprietà settate a 0; 
 5. Con l'uso del destructuring creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo in console; 
+
+**BONUS 1 - SNACK 3**
+1. Creare un array di articoli di moda;
+2. Attaccare ad ogni oggetto un cartellino position con una lettera dell'alfabeto generata casualmente;
+3. Inserire gli oggetti modificati in un nuovo array;
+
+**BONUS 2**
+1. Stampare in pagina olre che in console;
+
+
