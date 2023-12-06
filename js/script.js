@@ -43,39 +43,45 @@ console.log(`La bici con il peso minore è ${name} con un peso di ${weight} kg.`
 // Creazione dell'array delle squadre di calcio
 let teams = [
     {
-        name: 'Inter',
+        nome: 'Inter',
         points: 0,
         fouls: 0
     },
     {
-        name: 'Milan',
+        nome: 'Milan',
         points: 0,
         fouls: 0
     },
     {
-        name: 'Napoli',
+        nome: 'Napoli',
         points: 0,
         fouls: 0
     },
     {
-        name: 'Juventus',
+        nome: 'Juventus',
         points: 0,
         fouls: 0
     },
     {
-        name: 'Roma',
+        nome: 'Roma',
         points: 0,
         fouls: 0
     },
     {
-        name: 'Lazio',
+        nome: 'Lazio',
         points: 0,
         fouls: 0
     },
 ]
 
+// Utilizzo del map per generare numeri casuali per tutte le squadre
 teams = teams.map(team => ({
     ...team,
     points: Math.floor(Math.random() * 10),
     fouls: Math.floor(Math.random() * 20)   
 }));
+
+// Destructuring per creare un nuovo array con solo nomi e falli di ogni squadra
+const teamsFiltered = teams.map(({ nome, fouls }) => ({ nome, fouls}));
+
+console.log(teamsFiltered);
