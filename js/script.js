@@ -85,3 +85,28 @@ teams = teams.map(team => ({
 const teamsFiltered = teams.map(({ nome, fouls }) => ({ nome, fouls}));
 
 console.log(teamsFiltered);
+
+// **BONUS 1 - SNACK 3**
+// Creazione dell'array di articoli di moda
+let articles = [
+    {
+        name: 'Poppy',
+        type: 'tshirt',
+        color: 'red'
+    },
+    {
+        name: 'Jumping',
+        type: 'occhiali',
+        color: 'blue'
+    },
+    {
+        name: 'CrissCross',
+        type: 'scarpe',
+        color: 'black'
+    },
+    {
+        name: 'Jenny',
+        type: 'borsa',
+        color: 'pink'
+    }
+];
