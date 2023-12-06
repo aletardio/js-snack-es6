@@ -122,3 +122,24 @@ articles = articles.map(articles => ({
 const newArticles = articles.map(({ name_1, type, color, position }) => ({ name_1, type, color, position }));
 
 console.log(newArticles);
+
+// **BONUS-2**
+// Stampare nel dom oltre che in console tutti gli snack
+let snack_1 = document.getElementById('snack-1').innerHTML = `La bici con il peso minore è ${name} con un peso di ${weight} kg.`;
+
+const snack_2 = document.getElementById('snack-2');
+
+teams.forEach(team => {
+    const teamDiv = document.createElement('div');
+    teamDiv.textContent = `Team: ${team.nome}, Fouls: ${team.fouls}`;
+    snack_2.appendChild(teamDiv);
+});
+
+
+const snack_3 = document.getElementById('snack-3');
+
+articles.forEach(article => {
+    const articleDiv = document.createElement('div');
+    articleDiv.textContent = `Name: ${article.name_1}, Type: ${article.type}, Color: ${article.color}, Position: ${article.position}`;
+    snack_3.appendChild(articleDiv);
+});

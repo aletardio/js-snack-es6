@@ -46,6 +46,6 @@ Stampare in pagina oltre che in console!
 3. Inserire gli oggetti modificati in un nuovo array;
 
 **BONUS 2**
-1. Stampare in pagina olre che in console;
+1. Stampare in pagina oltre che in console;
 
 
