@@ -90,23 +90,35 @@ console.log(teamsFiltered);
 // Creazione dell'array di articoli di moda
 let articles = [
     {
-        name: 'Poppy',
+        name_1: 'Poppy',
         type: 'tshirt',
         color: 'red'
     },
     {
-        name: 'Jumping',
+        name_1: 'Jumping',
         type: 'occhiali',
         color: 'blue'
     },
     {
-        name: 'CrissCross',
+        name_1: 'CrissCross',
         type: 'scarpe',
         color: 'black'
     },
     {
-        name: 'Jenny',
+        name_1: 'Jenny',
         type: 'borsa',
         color: 'pink'
     }
 ];
+
+// Attaccare ag ogni oggetto la proprietà position con una lettera casuale
+const alphabet = 'ABCDFEGHIJKLMNOPQRSTUVWXYZ';
+articles = articles.map(articles => ({
+    ...articles,
+    position: alphabet[Math.floor(Math.random() * alphabet.length)]
+}));
+
+// Inserire gli oggetti modificati in un nuovo array
+const newArticles = articles.map(({ name_1, type, color, position }) => ({ name_1, type, color, position }));
+
+console.log(newArticles);
