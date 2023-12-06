@@ -36,7 +36,7 @@ bicycles.forEach((elem) => {
 // Utilizzo della destructuring per ottenere nome e peso
 const { name, weight } = bikeLighterWeight;
 
-console.log(`La bici con il peso minore è ${name} con un peso di ${weight} kg.`);
+console.log(`La bici con il peso minore di ${weight} kg è ${name}.`);
 
 
 // **SNACK 2**
@@ -125,7 +125,7 @@ console.log(newArticles);
 
 // **BONUS-2**
 // Stampare nel dom oltre che in console tutti gli snack
-let snack_1 = document.getElementById('snack-1').innerHTML = `La bici con il peso minore è ${name} con un peso di ${weight} kg.`;
+let snack_1 = document.getElementById('snack-1').innerHTML = `La bici con il peso minore di ${weight} kg è ${name}.`;
 
 const snack_2 = document.getElementById('snack-2');
 
