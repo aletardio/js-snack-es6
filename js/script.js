@@ -1,3 +1,4 @@
+// **SNACK 1**
 // Creazione dell'array di oggetti
 let bicycles = [
     {
@@ -36,3 +37,39 @@ bicycles.forEach(elem => {
 const { name, weight } = bikeLighterWeight;
 
 console.log(`La bici con il peso minore è ${name} con un peso di ${weight} kg.`);
+
+
+// **SNACK 2**
+// Creazione dell'array delle squadre di calcio
+let teams = [
+    {
+        name: 'Inter',
+        points: 0,
+        fouls: 0
+    },
+    {
+        name: 'Milan',
+        points: 0,
+        fouls: 0
+    },
+    {
+        name: 'Napoli',
+        points: 0,
+        fouls: 0
+    },
+    {
+        name: 'Juventus',
+        points: 0,
+        fouls: 0
+    },
+    {
+        name: 'Roma',
+        points: 0,
+        fouls: 0
+    },
+    {
+        name: 'Lazio',
+        points: 0,
+        fouls: 0
+    },
+]
