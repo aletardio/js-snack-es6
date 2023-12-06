@@ -27,7 +27,7 @@ let bicycles = [
 let bikeLighterWeight = { weight: Infinity };
 
 // Ciclo forEach per cercare la bici con peso minore
-bicycles.forEach(elem => {
+bicycles.forEach((elem) => {
     if(elem.weight < bikeLighterWeight.weight){
         bikeLighterWeight = elem;
     }
@@ -73,3 +73,9 @@ let teams = [
         fouls: 0
     },
 ]
+
+teams = teams.map(team => ({
+    ...team,
+    points: Math.floor(Math.random() * 10),
+    fouls: Math.floor(Math.random() * 20)   
+}));
